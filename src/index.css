@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.default-container-bg {
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8) 0,
+    rgba(0, 0, 0, 0) 60%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+}
+
+.nav-btn-custom:hover {
+  transition-timing-function: cubic-bezier(0.5, 0, 0.1, 1);
+  background: rgb(193, 17, 25);
+}
+
+@media (min-width: 1280px) {
+  .nav-custom {
+    max-width: calc(83.33333333333334% - (3rem * 2));
+  }
+}
