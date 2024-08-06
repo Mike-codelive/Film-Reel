@@ -1,4 +1,13 @@
+import { MagnifyingGlassIcon } from "@heroicons/react/16/solid";
+import { useRef } from "react";
+
 export default function Navbar() {
+  const inputRef = useRef(null);
+
+  const handleIconClick = () => {
+    inputRef.current.focus();
+  };
+
   return (
     <nav>
       <div>
@@ -22,9 +31,20 @@ export default function Navbar() {
                 </g>
               </svg>
             </h1>
-            <button className="nav-btn-custom bg-[#e50914] text-[#ffffff]">
-              Explore
-            </button>
+            <div className="flex items-center relative">
+              <input
+                ref={inputRef}
+                className="custom-input pl-[25px] max-w-[170px] md:w-full"
+                type="text"
+              />
+              <MagnifyingGlassIcon
+                onClick={handleIconClick}
+                className="absolute ml-[5px] text-[#ffff] h-[20px]"
+              />
+              <button className="nav-btn-custom p-[3px] rounded-[0.5em] ml-[5px] bg-[#e50914] text-[#ffffff]">
+                Explore
+              </button>
+            </div>
           </div>
         </div>
       </div>
