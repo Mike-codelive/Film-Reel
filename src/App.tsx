@@ -7,7 +7,7 @@ import Details from "./pages/Details";
 
 function App() {
   return (
-    <section>
+    <section className="max-w-[1170px] mx-auto">
       <Navbar />
       <BrowserRouter>
         <Routes>

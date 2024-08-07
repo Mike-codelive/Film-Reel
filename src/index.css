@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  background-color: #000;
+}
+
 .default-container-bg {
   background-image: linear-gradient(
     to top,
@@ -31,6 +35,6 @@
 
 @media (min-width: 1280px) {
   .nav-custom {
-    max-width: calc(83.33333333333334% - (3rem * 2));
+    max-width: 90%;
   }
 }

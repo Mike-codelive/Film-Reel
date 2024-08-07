@@ -53,7 +53,7 @@ function HomeSlider() {
 
   return (
     <div className="row">
-      <div className="relative col-xl-8">
+      <div className="relative col-xl-8 px-0">
         {carouselMovies.length > 0 ? (
           <div id="carouselExample" className="carousel slide h-full">
             <HomeCarousel carouselMovies={carouselMovies} />
