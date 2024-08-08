@@ -14,7 +14,6 @@ function HomeCarousel({ carouselMovies }: HomecarouselProps) {
         <Link key={ind} to={`/details/${movie.id}`}>
           <div className={`carousel-item ${ind == 0 ? "active" : ""}  h-full`}>
             <div className="relative h-full ">
-              {/* <div className="block bg-red-300 aspect-[7/4]"></div> */}
               <img
                 src={imagepath + movie?.backdrop_path}
                 className="w-full h-full min-h-[300px] object-cover aspect-[7/4]"
@@ -26,7 +25,6 @@ function HomeCarousel({ carouselMovies }: HomecarouselProps) {
               <div className="absolute bottom-0 h-44 w-full _carouselGradient"></div>
             </div>
             <div className="absolute bottom-0 md:flex items-end gap-4 px-4">
-              {/* <div className="block bg-blue-400 w-[160px] aspect-[4/5]"></div> */}
               <img
                 src={imagepath + movie?.poster_path}
                 alt=""
@@ -40,7 +38,7 @@ function HomeCarousel({ carouselMovies }: HomecarouselProps) {
                   {movie?.overview}
                 </h2>
                 <div className="flex items-center gap-1 text-zinc-400 lg:text-lg md:text-md text-sm">
-                  <FiThumbsUp />
+                  <FiThumbsUp className="text-green-600" />
                   <h3>{movie?.vote_count}</h3>
                 </div>
               </div>

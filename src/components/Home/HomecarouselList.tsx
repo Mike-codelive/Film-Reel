@@ -15,12 +15,15 @@ function HomecarouselList({ next, carouselMovies }: HomecarouselListProps) {
         {carouselMovies.length > 0
           ? next.map((item, i) => (
               <CarouselMiniCard
+                key={i}
                 carouselMovies={carouselMovies}
                 item={item}
                 i={item}
               />
             ))
-          : [...Array(3)].map((item) => <CarouselMiniCardSkeleton />)}
+          : [...Array(3)].map((item, i) => (
+              <CarouselMiniCardSkeleton key={i} />
+            ))}
       </div>
     </div>
   );

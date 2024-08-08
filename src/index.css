@@ -33,6 +33,10 @@ body {
   border-color: #ffff;
 }
 
+._carouselGradient {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0));
+}
+
 @media (min-width: 1280px) {
   .nav-custom {
     max-width: 90%;

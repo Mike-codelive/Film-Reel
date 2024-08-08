@@ -10,6 +10,7 @@ interface MovieListProps {
 function MovieList({ movies, title }: MovieListProps) {
   return (
     <div className="md:mt-14 sm:mt-8 mt-2 px-2">
+      <h1 className="my-[3rem] text-white text-[32px]">Top Rated</h1>
       {title && (
         <h1 className="md:text-3xl sm:text-2xl text-xl font-bold text-yellow-500">
           {title}
@@ -19,7 +20,7 @@ function MovieList({ movies, title }: MovieListProps) {
         {movies.length > 0
           ? movies.length > 0 &&
             movies.map((data, ind) => <MovieCard key={ind} movieData={data} />)
-          : [...Array(12)].map((item) => <MovieCardSkeleton />)}
+          : [...Array(12)].map((item, i) => <MovieCardSkeleton key={i} />)}
       </div>
     </div>
   );
