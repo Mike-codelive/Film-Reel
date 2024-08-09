@@ -17,7 +17,7 @@ body {
 
 .nav-btn-custom:hover {
   transition-timing-function: cubic-bezier(0.5, 0, 0.1, 1);
-  background: rgb(193, 17, 25);
+  background: #c11119;
 }
 
 .custom-input {

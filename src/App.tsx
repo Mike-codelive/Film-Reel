@@ -8,8 +8,8 @@ import Details from "./pages/Details";
 function App() {
   return (
     <section className="max-w-[1170px] mx-auto">
-      <Navbar />
       <BrowserRouter>
+        <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/movies" element={<Movies />} />

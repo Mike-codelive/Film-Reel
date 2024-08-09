@@ -28,11 +28,7 @@ function CarouselMiniCard({ carouselMovies, item, i }: CarouselMiniCardProps) {
         />
         <div className="flex flex-col justify-between py-2">
           <div className="leading-5">
-            <h1
-              className={`text-zinc-300 mb-[10px] ${
-                hover === i ? "underline" : ""
-              }`}
-            >
+            <h1 className="text-zinc-300 mb-[10px]">
               {carouselMovies[item]?.title}
             </h1>
             <h1 className="text-md text-zinc-300 line-clamp-3">

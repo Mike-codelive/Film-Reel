@@ -37,7 +37,7 @@ function HomeCarousel({ carouselMovies }: HomecarouselProps) {
                 <h2 className="w-[95%] lg:text-xl md:text-lg text-md line-clamp-3 text-zinc-400">
                   {movie?.overview}
                 </h2>
-                <div className="flex items-center gap-1 text-zinc-400 lg:text-lg md:text-md text-sm">
+                <div className="flex items-center mt-[1rem] gap-2 text-zinc-400 lg:text-lg md:text-md text-sm">
                   <FiThumbsUp className="text-green-600" />
                   <h3>{movie?.vote_count}</h3>
                 </div>
