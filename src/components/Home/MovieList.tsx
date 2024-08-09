@@ -5,12 +5,19 @@ import MovieCardSkeleton from "../Skeleton/MovieCardSkeleton";
 interface MovieListProps {
   movies: MovieCardType[];
   title?: string;
+  showTopRatedHeading?: boolean; // New prop
 }
 
-function MovieList({ movies, title }: MovieListProps) {
+function MovieList({
+  movies,
+  title,
+  showTopRatedHeading = true,
+}: MovieListProps) {
   return (
     <div className="md:mt-14 sm:mt-8 mt-2 px-2">
-      <h1 className="my-[3rem] text-white text-[32px]">Top Rated</h1>
+      {showTopRatedHeading && (
+        <h1 className="my-[3rem] text-white text-[32px]">Top Rated</h1>
+      )}
       {title && (
         <h1 className="md:text-3xl sm:text-2xl text-xl font-bold text-yellow-500">
           {title}
