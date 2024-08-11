@@ -19,7 +19,7 @@ function MovieList({
         <h1 className="my-[3rem] text-white text-[32px]">Top Rated</h1>
       )}
       {title && (
-        <h1 className="md:text-3xl sm:text-2xl text-xl font-bold text-yellow-500">
+        <h1 className="md:text-3xl sm:text-2xl text-xl font-bold text-white">
           {title}
         </h1>
       )}

@@ -47,14 +47,14 @@ function Details() {
                   className="lg:w-[350px] md:w-[280px] sm:w-[250px] w-[200px] h-fit aspect-[4/6]"
                   alt=""
                 />
-                <div className="">
-                  <h1 className="lg:text-5xl  md:text-4xl sm:text-3xl text-2xl">
+                <div>
+                  <h1 className="lg:text-5xl text-white mt-[2.5rem] md:text-4xl sm:text-3xl text-2xl">
                     {details?.original_title}
-                    <span className="md:mx-3 mx-1 lg:text-4xl  md:text-3xl sm:text-2xl text-xl">
+                    <span className=" text-slate-400 ml-[2rem] lg:text-4xl  md:text-3xl sm:text-2xl text-xl">
                       ({details?.release_date?.substring(0, 4)})
                     </span>
                   </h1>
-                  <div className="lg:text-xl md:text-lg sm:text-md text-slate-300 sm:mt-2 mt-1">
+                  <div className="lg:text-xl md:text-lg sm:text-md text-slate-300 mt-[2.5rem]">
                     <h2>{details?.tagline}</h2>
                     <h2 className="sm:mt-3 mt-2">{details?.overview}</h2>
                     <div className="flex flex-col md:gap-3 gap-2 mt-4 text-zinc-300">

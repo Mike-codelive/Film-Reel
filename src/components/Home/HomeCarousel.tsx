@@ -10,9 +10,9 @@ interface HomecarouselProps {
 function HomeCarousel({ carouselMovies }: HomecarouselProps) {
   return (
     <div className="carousel-inner h-full">
-      {carouselMovies.map((movie, ind) => (
-        <Link key={ind} to={`/details/${movie.id}`}>
-          <div className={`carousel-item ${ind == 0 ? "active" : ""}  h-full`}>
+      {carouselMovies.map((movie, i) => (
+        <Link key={i} to={`/details/${movie.id}`}>
+          <div className={`carousel-item ${i == 0 ? "active" : ""}  h-full`}>
             <div className="relative h-full ">
               <img
                 src={imagepath + movie?.backdrop_path}
