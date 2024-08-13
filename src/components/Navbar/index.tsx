@@ -79,7 +79,7 @@ export default function Navbar() {
               />
               {showSearch && search.length > 0 && (
                 <div
-                  className="sm:absolute fixed z-[99999] top-[45px] right-1 cursor-pointer bg-zinc-800 text-red-500 sm:text-2xl text-xl"
+                  className="fixed z-[99999] top-[45px] sm:top-[65px] right-1 sm:right-[156px] cursor-pointer bg-zinc-800 text-red-500 sm:text-2xl text-xl"
                   onClick={() => toggleShow(false)}
                 >
                   <IoClose />
@@ -87,7 +87,7 @@ export default function Navbar() {
               )}
               {showSearch && search.length > 0 && (
                 <div onClick={() => toggleShow(false)}>
-                  <div className="sm:absolute fixed z-[9999] top-[35px] left-0 sm:max-w-[500px] w-full bg-zinc-800 rounded-xl">
+                  <div className="sm:absolute fixed z-[9999] top-[60px] sm:top-[35px] left-0 sm:w-[300px] sm:max-w-[500px] w-full bg-zinc-800 rounded-xl">
                     <div className="py-3 pl-5">
                       <div className="flex flex-col gap-2 h-fit max-h-[380px] overflow-x-hidden overflow-y-auto">
                         {searchedList.length > 0 &&
